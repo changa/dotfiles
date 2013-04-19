@@ -1,0 +1,25 @@
+# vim : se ft=gitconfig :
+
+###############################
+# Global user-level gitignore #
+###############################
+
+# Temp files
+*.swp
+*.DS_Store
+*~
+
+# Ctags files
+.tags
+
+# Local settings
+.local*
+
+# bundler files
+.bundle
+
+# Ruby version management files
+.ruby-version
+.ruby-gemset
+.rvmrc
+.rbenv*

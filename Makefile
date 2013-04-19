@@ -6,3 +6,9 @@ install: ~/.psqlrc ~/.tigrc
 
 ~/.tigrc:
 	ln -s `pwd`/tigrc ~/.tigrc
+
+~/.gitexcludes:
+	ln -s `pwd`/gitexcludes ~/.gitexcludes
+
+~/.gitconfig: ~/.gitexcludes
+	ln -s `pwd`/gitconfig ~/.gitconfig
