@@ -1,4 +1,10 @@
-install: ~/.psqlrc ~/.tigrc ~/.gitconfig ~/.screenrc ~/.tmux.conf ~/.pryrc
+install: create-home-if-needed ~/.psqlrc ~/.tigrc ~/.gitconfig ~/.screenrc \
+  ~/.tmux.conf ~/.pryrc ~/.Xdefaults
+
+# Obviously unnecessary… unless we only do a dry-run in an alternative
+# directory provided by overriding HOME.
+create-home-if-needed:
+	mkdir -p ${HOME}
 
 ~/.psqlrc:
 	mkdir -p ~/.psql_history
