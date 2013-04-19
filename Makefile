@@ -1,4 +1,4 @@
-install: ~/.psqlrc ~/.tigrc
+install: ~/.psqlrc ~/.tigrc ~/.gitconfig ~/.screenrc
 
 ~/.psqlrc:
 	mkdir -p ~/.psql_history
@@ -12,3 +12,6 @@ install: ~/.psqlrc ~/.tigrc
 
 ~/.gitconfig: ~/.gitexcludes
 	ln -s `pwd`/gitconfig ~/.gitconfig
+
+~/.screenrc:
+	ln -s `pwd`/screenrc ~/.screenrc
