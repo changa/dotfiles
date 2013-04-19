@@ -45,7 +45,7 @@
 	unstage 	= reset HEAD --
 	u       	= reset HEAD --
 	last    	= log -1 HEAD
-	visual  	= !qgit4
+	visual  	= !qgit
 
 	standup 	= "!git log –since yesterday –author `git config user.email` –pretty=short"
 
