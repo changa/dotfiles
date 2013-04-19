@@ -1,0 +1,14 @@
+! vim: se ft=xdefaults :
+
+URxvt.visualBell:	true
+URxvt.scrollBar:	false
+!URxvt.scrollBar_right:	true
+
+URxvt.termName: rxvt-unicode
+
+! The "secondaryScroll" configures urxvt to scroll in full-screen apps,
+! like screen, so lines scrolled out of screen end up in urxvt's scrollback buffer
+URxvt.secondaryScroll:  true
+
+URxvt.saveLines:        8192
+URxvt.mapAlert:         true

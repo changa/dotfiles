@@ -1,0 +1,3 @@
+! vim: se ft=xdefaults :
+
+URxvt.font: xft:DejaVu Sans Mono:antialias=true:autohint=true:pixelsize=13
