@@ -1,4 +1,4 @@
-install: ~/.psqlrc ~/.tigrc ~/.gitconfig ~/.screenrc ~/.tmux.conf
+install: ~/.psqlrc ~/.tigrc ~/.gitconfig ~/.screenrc ~/.tmux.conf ~/.pryrc
 
 ~/.psqlrc:
 	mkdir -p ~/.psql_history
@@ -18,3 +18,6 @@ install: ~/.psqlrc ~/.tigrc ~/.gitconfig ~/.screenrc ~/.tmux.conf
 
 ~/.tmux.conf:
 	ln -s `pwd`/tmux.conf ~/.tmux.conf
+
+~/.pryrc:
+	ln -s `pwd`/pryrc ~/.pryrc
