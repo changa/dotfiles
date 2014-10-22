@@ -152,7 +152,7 @@
 	whitespace = trailing-space,space-before-tab
 
 [push]
-	default 	= tracking
+	default 	= upstream
 
 [branch]
 	# When a new branch is created with git branch or git checkout that tracks
