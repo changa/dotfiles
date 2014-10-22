@@ -135,6 +135,7 @@
 	# editor = vim  ; use GIT_EDITOR instead
 	pager  	= less -FRSX
 	excludesfile 	= ~/.gitexcludes
+	whitespace = trailing-space,space-before-tab
 
 [push]
 	default 	= tracking
