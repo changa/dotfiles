@@ -10,7 +10,8 @@
 *~
 
 # Ctags files
-.tags
+.tags*
+tags
 
 # Local settings
 .local*
