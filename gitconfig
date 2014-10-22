@@ -1,4 +1,4 @@
-# vim: se ft=gitconfig :
+# vim: set ft=gitconfig nolist noexpandtab ts=2 :
 
 [diff]
 	color 	= true
