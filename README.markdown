@@ -1,6 +1,6 @@
-# Bunch of dotfiles (WIP)
+# Bunch of dotfiles
 
-There's nothing interesting here to see (yet)
+Some of my dotfiles
 
 ## Usage
 
