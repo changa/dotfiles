@@ -24,6 +24,7 @@
 	fa  	= fetch --all
 	pr  	= pull --rebase
 	pa  	= pull --all
+	pf  	= push --force
 
 	cpk 	= cherry-pick
 
