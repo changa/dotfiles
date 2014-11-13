@@ -1,1 +1,9 @@
-set show-date = local
+# vim: set ft=muttrc :
+
+set show-date          = local
+set line-graphics      = utf-8
+set wrap-lines         = yes
+set title-overflow     = yes
+set editor-line-number = yes
+
+color default white black
