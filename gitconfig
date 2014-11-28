@@ -42,6 +42,7 @@
 	mylogp 	= "!git logp --author=\"`git config --get user.name`\""
 	mylg 	= "!git lg --author=\"`git config --get user.name`\""
 	mylgs 	= "!git lgs --author=\"`git config --get user.name`\""
+	week	= "!git log --author=\"`git config --get user.name`\" --graph --pretty=format:'%Cred%ci%Creset -%C(yellow)%d%Creset %s %Cgreen(%h) %C(bold blue)<%an>%Creset' --abbrev-commit --branches=* --since='last sunday'"
 
 	standup = "!git log --since yesterday –author `git config user.email` --pretty=short"
 	news = log -p HEAD@{1}..HEAD@{0}
