@@ -2,6 +2,7 @@
 
 [diff]
 	color 	= true
+	algorithm = patience
 
 [alias]
 	# list aliases
