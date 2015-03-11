@@ -7,7 +7,7 @@ URxvt.scrollBar:	false
 URxvt.termName: rxvt-unicode
 
 ! The "secondaryScroll" configures urxvt to scroll in full-screen apps,
-! like screen, so lines scrolled out of screen end up in urxvt's scrollback buffer
+! like screen, so lines scrolled out of screen end up in urxvt scrollback buffer
 URxvt.secondaryScroll:  true
 
 URxvt.saveLines:        8192
