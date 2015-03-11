@@ -29,18 +29,10 @@ URxvt.inheritPixmap: true
 URxvt.shading: 8
 URxvt.fading: 40
 
-! couleur du texte en gras
-URxvt.colorBD:		blue
-
-! couleur du texte souligné
-URxvt.colorUL:		white
-
-URxvt.underlineColor:   yellow
-
-! couleur du curseur
-URxvt.cursorColor:	red
-
-! couleur de la barre de défilement
-URxvt.scrollColor:	#6487B2
+URxvt.colorBD:         blue
+URxvt.colorUL:         white
+URxvt.underlineColor:  yellow
+URxvt.cursorColor:     red
+URxvt.scrollColor:     #6487B2
 
 Xcursor.theme: Gold
