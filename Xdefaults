@@ -1,6 +1,6 @@
 ! vim: se ft=xdefaults :
 
-#include ".dotfiles/xdefaults/main"
-#include ".dotfiles/xdefaults/colors"
-#include ".dotfiles/xdefaults/extensions"
-#include ".dotfiles/xdefaults/fonts"
+#include "./xdefaults/main"
+#include "./xdefaults/colors"
+#include "./xdefaults/extensions"
+#include "./xdefaults/fonts"
