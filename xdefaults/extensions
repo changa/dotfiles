@@ -3,7 +3,6 @@
 !##
 ! Inspired from http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.7.pod
 !
-URxvt.perl-lib: /usr/lib/urxvt/perl
 URxvt.perl-ext-common: default,selection-popup,selection-autotransform,remote-clipboard,matcher<C-1>
 URxvt.urlLauncher: sensible-browser
 
