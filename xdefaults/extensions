@@ -24,7 +24,8 @@ URxvt.matcher.launcher.1: gvim --remote-tab +$2 $1
 
 ! Increase/decrease font size on the fly
 URxvt.perl-ext-common: font-size
-URxvt.keysym.C-f:      perl:font-size:reset
+
+URxvt.keysym.C-Escape: perl:font-size:reset
 URxvt.keysym.C-Up:     perl:font-size:increase
 URxvt.keysym.C-Down:   perl:font-size:decrease
 URxvt.keysym.C-S-Up:   perl:font-size:incglobal
