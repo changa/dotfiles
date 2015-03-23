@@ -1,12 +1,15 @@
 .PHONY: load_xdefaults create-home-if-needed
 
 install: create-home-if-needed ~/.psqlrc ~/.tigrc ~/.gitconfig ~/.screenrc \
-  ~/.tmux.conf ~/.pryrc load_xdefaults
+  ~/.tmux.conf ~/.pryrc ~/.gemrc load_xdefaults
 
 # Obviously unnecessary… unless we only do a dry-run in an alternative
 # directory provided by overriding HOME.
 create-home-if-needed:
 	mkdir -p ${HOME}
+
+~/.gemrc:
+	ln -sf $(CURDIR)/gemrc ~/.gemrc
 
 ~/.psqlrc:
 	mkdir -p ~/.psql_history
