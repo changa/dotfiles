@@ -1,3 +1,7 @@
 ! vim: se ft=xdefaults :
 
-URxvt.font: xft:DejaVu Sans Mono:antialias=true:autohint=true:pixelsize=13
+URxvt.font: xft:DejaVu Sans Mono for Powerline:antialias=true:autohint=true:pixelsize=13, \
+  xft:DejaVu Sans Mono:antialias=true:autohint=true:pixelsize=13, \
+  xft:Symbola:pixelsize=13 , \
+  xft:Ubuntu Mono derivative Powerline:pixelsize=13 \,
+  xft:Ubuntu Mono:pixelsize=13 \,
