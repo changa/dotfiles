@@ -33,11 +33,17 @@ create-home-if-needed:
 ~/.pryrc:
 	ln -sf $(CURDIR)/pryrc ~/.pryrc
 
-~/.Xdefaults: ~/.urxvt
-	ln -sf $(CURDIR)/Xdefaults ~/.Xdefaults
-
 ~/.urxvt:
 	ln -sf $(CURDIR)/urxvt ~/.urxvt
+
+Xdefaults: Xdefaults.template ~/.urxvt
+	perl -pe "s,\<HOME,<${HOME}," $< > $@
+
+~/.Xdefaults: Xdefaults ~/.xdefaults
+	ln -sf $(CURDIR)/Xdefaults ~/.Xdefaults
+
+~/.xdefaults: xdefaults
+	ln -sf $(CURDIR)/xdefaults ~/.xdefaults
 
 load_xdefaults: ~/.Xdefaults
 	xrdb -quiet -load $(CURDIR)/Xdefaults
