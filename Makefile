@@ -37,13 +37,10 @@ create-home-if-needed:
 	ln -sf $(CURDIR)/urxvt ~/.urxvt
 
 Xresources: Xresources.template ~/.urxvt
-	perl -pe "s,HOME,${HOME}," $< > $@
+	perl -pe "s,DIR,$(CURDIR)," $< > $@
 
-~/.Xresources: Xresources ~/.xresources
+~/.Xresources: Xresources
 	ln -sf $(CURDIR)/Xresources ~/.Xresources
 
-~/.xresources: xresources
-	ln -sf $(CURDIR)/xresources ~/.xresources
-
 load_xresources: ~/.Xresources
-	xrdb -quiet -load $(CURDIR)/Xresources
+	xrdb -quiet -load $<
