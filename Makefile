@@ -1,7 +1,7 @@
-.PHONY: load_xdefaults create-home-if-needed
+.PHONY: load_xresources create-home-if-needed
 
 install: create-home-if-needed ~/.psqlrc ~/.tigrc ~/.gitconfig ~/.screenrc \
-  ~/.tmux.conf ~/.pryrc ~/.gemrc load_xdefaults
+  ~/.tmux.conf ~/.pryrc ~/.gemrc load_xresources
 
 # Obviously unnecessary… unless we only do a dry-run in an alternative
 # directory provided by overriding HOME.
@@ -36,14 +36,14 @@ create-home-if-needed:
 ~/.urxvt:
 	ln -sf $(CURDIR)/urxvt ~/.urxvt
 
-Xdefaults: Xdefaults.template ~/.urxvt
-	perl -pe "s,\<HOME,<${HOME}," $< > $@
+Xresources: Xresources.template ~/.urxvt
+	perl -pe "s,HOME,${HOME}," $< > $@
 
-~/.Xdefaults: Xdefaults ~/.xdefaults
-	ln -sf $(CURDIR)/Xdefaults ~/.Xdefaults
+~/.Xresources: Xresources ~/.xresources
+	ln -sf $(CURDIR)/Xresources ~/.Xresources
 
-~/.xdefaults: xdefaults
-	ln -sf $(CURDIR)/xdefaults ~/.xdefaults
+~/.xresources: xresources
+	ln -sf $(CURDIR)/xresources ~/.xresources
 
-load_xdefaults: ~/.Xdefaults
-	xrdb -quiet -load $(CURDIR)/Xdefaults
+load_xresources: ~/.Xresources
+	xrdb -quiet -load $(CURDIR)/Xresources
