@@ -10,7 +10,7 @@
 
 \set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
 \set PAGER OFF
-\set HISTFILE ~/.psql_history/ :HOST - :USER -:DBNAME
+\set HISTFILE ~/.psql_history/:USER -:DBNAME
 \set HISTSIZE 2000
 \set ECHO_HIDDEN ON
 \set COMP_KEYWORD_CASE upper
