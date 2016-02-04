@@ -24,3 +24,4 @@ tags
 .ruby-gemset
 .rvmrc
 .rbenv*
+.envrc
